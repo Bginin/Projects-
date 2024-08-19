@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+         font-size: 1.2rem;
+}
+.text-shadow {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+.gruppo-regular {
+    font-family: "Gruppo", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+/*****  START Projects  *****/
+
+.container-projects h2 {
+    margin-top: 7rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.container-projects {
+    background:#fefefe;
+    min-height: 100vh;
+    text-align: center;
+}
+.container-projects-links {
+    padding: 1.5rem 1.5rem;
+}
+
+.projects {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) */
+  }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.projects-link img {
+    border-radius: 5%;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+figcaption {
+    font-size: medium;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+.projects figure {
+    margin: 0.5rem;
+}
+
+ .button-projects {
+     text-align: center;
+     padding: 3rem;
+}
+
+.btn {
+    padding: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* END Projects  */
+
+
+/* --------- Media Queries ------*/
+
+
+
+/******* START Mobile Nav *****/
+
+      
+@media (min-width: 647px) {
+  
+    
+   
+.container-projects-links {
+    max-width: 1000px;
+    margin: auto;
+}
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 1rem;
+    }
+    .projects-link, .button-projects, .name, .role, .contact-container-individual, .link-top{
+        transition: transform .4s;
+    }
+    
+    .projects-link:hover {
+        transform: scale(1.1);
+    }
+    .link-top:hover {
+        transform: scale(1.1);
+    }
+    
+    .links:hover {
+        transform: scale(1.1);
+    }
+
+    .btn,.button-projects:hover {
+        
+        transform: scale(1.5);
+    }
+   
+    .contact-container-individual:hover {
+
+        transform: scale(1.2);
+    }
+
+    
+    .links {
+        padding-right: 1rem;
+        text-decoration: none;
+        color: black;
+        transition: transform .4s;
+    }  
+    .mobile-container {
+        display: none;
+    }
+    
+  }
+ 
+ @media (min-width: 1232px) {
+   .button-projects {
+       margin-top: 100px; 
+   }
+}
+
